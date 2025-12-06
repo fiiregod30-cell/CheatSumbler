@@ -5814,6 +5814,13 @@
         "alignment": 255,
         "members": {},
         "type": "unknown"
+      },
+      "______": {
+        "alignment": 0,
+        "members": {
+          "": 0
+        },
+        "type": "unknown"
       }
     }
   }
