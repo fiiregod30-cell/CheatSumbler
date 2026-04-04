@@ -1,42 +1,91 @@
 {
-  "versao": "2603.1.2.13",
-  "offsets": {
-    "uworld": "0x114B7E28",
-    "decrypt": "0x0FAD3A28",
-    "gnames": "0x11732A10",
-    "chunk_size": "0x00003E4C",
-    "actors_array": "0x00000138",
-    "actors_for_gc": "0x00000138",
-    "current_level": "0x00000800",
-    "actor_root_component": "0x00000308",
-    "actor_groggy_health": "0x000014c0",
-    "actor_character_name": "0x00001df0",
-    "actor_last_team_num": "0x00002c08",
-    "actor_mesh": "0x000004a0",
-    "mesh_last_submit_time": "0x0000075C",
-    "mesh_last_render_time": "0x00000760",
-    "mesh_always_create_physics": "0x00000488",
-    "actor_root_pos": "0x00000330",
-    "actor_rotation": "0x00001B44",
-    "dropped_item": "0x00000458",
-    "dropped_item_group": "0x1c0",
-    "dropped_item_group_uitem": "0x00000870",
-    "dropped_item_group_item_table": "0x000000B0",
-    "dropped_item_group_uitemid": "0x00000244"
-  },
-  "decryption": {
-    "index": 0,
-    "method1": {
-      "actor_objid": 28,
-      "xor_key": "0x221A03AC",
-      "ror_shift": 17,
-      "final_xor": "0x12082DD7"
-    },
-    "method2": {
-      "actor_objid": 32,
-      "xor_key": "0x7360F24",
-      "ror_shift": 23,
-      "final_xor": "0xB621EC05"
-    }
-  }
+  "GAME_UWORLD": "0x114B7E28",
+  "GAME_UWORLD_IDA": "0x85027E28",
+  "GAME_GATE_IDA": "0x83643900",
+  "GAME_DECRYPT": "0x0FAD3A28",
+  "GAME_GNAMES": "0x11732A10",
+  "GAME_GNAMES_OFFSET": "0x10",
+  "GAME_ELEMENTS_PER_CHUNK": "0x3E4C",
+  "GAME_GOBJECTS": "0x11478CF0",
+
+  "OFF_CURRENT_LEVEL": "0x800",
+  "OFF_GAME_INSTANCE": "0x3B0",
+  "OFF_GAME_STATE": "0x278",
+  "OFF_TIME_SECONDS": "0x810",
+
+  "OFF_LOCAL_PLAYERS_DATA": "0xF0",
+
+  "OFF_ACTORS": "0x138",
+  "OFF_ACTORS_COUNT": "0x140",
+  "OFF_ACTORS_FOR_GC": "0x138",
+  "OFF_OBJECT_ID": "0x20",
+  "OFF_TARRAY_DATA": "0x0",
+  "OFF_TARRAY_NUM": "0x8",
+
+  "OFF_PLAYER_ARRAY": "0x410",
+  "OFF_NUM_ALIVE_TEAMS": "0x480",
+  "OFF_FEATURE_REP_OBJECT": "0xCF0",
+
+  "OFF_SAFE_ZONE_POS": "0xB0",
+  "OFF_SAFE_ZONE_RADIUS": "0xBC",
+  "OFF_BLUE_ZONE_POS": "0xC0",
+  "OFF_BLUE_ZONE_RADIUS": "0xCC",
+
+  "OFF_PLAYER_CONTROLLER": "0x38",
+  "OFF_ACKNOWLEDGED_PAWN": "0x4A8",
+  "OFF_PLAYER_CAMERA_MANAGER": "0x4D0",
+  "OFF_SHOW_MOUSE_CURSOR": "0x480",
+  "OFF_VIEW_TARGET": "0x1050",
+  "OFF_CAMERA_FOV": "0xA2C",
+  "OFF_CAMERA_ROT": "0xA10",
+  "OFF_CAMERA_POS": "0xA30",
+
+  "OFF_PLAYER_STATE": "0x418",
+  "OFF_PLAYER_NAME": "0x420",
+  "OFF_CHARACTER_NAME": "0x1DF0",
+  "OFF_ACCOUNT_ID": "0",
+
+  "OFF_ROOT_COMPONENT": "0x308",
+  "OFF_COMPONENT_LOCATION": "0x330",
+  "OFF_ACTOR_ROTATION": "0x1B44",
+
+  "OFF_LAST_TEAM_NUM": "0x2C18",
+  "OFF_SPECTATED_COUNT": "0x113C",
+
+  "OFF_MESH": "0x4A0",
+  "OFF_MESH3P": "0x800",
+  "OFF_MESH_PHYSICS_STATE": "0x488",
+  "OFF_COMPONENT_TO_WORLD": "0x320",
+  "OFF_STATIC_MESH": "0xAE8",
+  "OFF_BONE_COUNT": "0xAF0",
+  "OFF_BOUND_BOX": "0x228",
+  "OFF_GENDER": "0xAC8",
+  "OFF_ANIM_SCRIPT_INSTANCE": "0xE30",
+
+  "OFF_DMA_LAST_SUBMIT_TIME": "0x75C",
+  "OFF_DMA_LAST_RENDER_TIME_ON_SCREEN": "0x760",
+
+  "OFF_DROPPED_ITEM": "0x458",
+  "OFF_DROPPED_ITEM_GROUP": "0x1C0",
+  "OFF_DROPPED_ITEM_GROUP_UITEM": "0x870",
+  "OFF_DROPPED_ITEM_GROUP_ITEM_TABLE": "0xB0",
+  "OFF_DROPPED_ITEM_GROUP_UITEM_ID": "0x244",
+
+  "OFF_COMPONENT_SPACE_TRANSFORMS_PAOD": "0xAC0",
+  "SCAN_MESH_TARRAY_MIN": "0x80",
+  "SCAN_MESH_TARRAY_MAX": "0xD00",
+
+  "OFF_HEA_FLAG": "0x3B9",
+  "OFF_HEALTH1": "0xA3C",
+  "OFF_HEALTH2": "0xA38",
+  "OFF_HEALTH3": "0xA24",
+  "OFF_HEALTH4": "0xA10",
+  "OFF_HEALTH5": "0xA25",
+  "OFF_HEALTH6": "0xA20",
+  "OFF_GROGGY_HEALTH": "0x14C0",
+
+  "DECRYPT_ACTOR_OBJID": "32",
+  "DECRYPT_XOR_KEY": "0x7360F24",
+  "DECRYPT_ROR_SHIFT": "23",
+  "DECRYPT_FINAL_XOR": "0xB621EC05"
 }
